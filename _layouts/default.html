@@ -6,41 +6,46 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
+        <link rel='stylesheet' id='opensans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C600italic%2C700italic%2C800italic%2C400%2C600%2C700%2C800&#038;ver=1.0' type='text/css' media='all' />
+
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="{{ site.url }}/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
+        <link rel="stylesheet" href="{{ site.url }}/css/screen.css">
     </head>
     <body>
-
+      <div class="header">
         <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
+          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+          <!-- <a class="extra" href="/">Home</a> -->
+        </div>
+      </div>
 
-                {{ content }}
-
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
+      <div class="container site-container">
+        <div class="site">
+            {{ content }}
+        </div>
+        <div class="footer">
+          <div class="contact">
+            <p>
+              Dan Ristic<br />
+              Developer Evangelist and Front End Engineer at PubNub<br />
+              danr (at) pubnub.com
+            </p>
           </div>
-        </div> <!-- /container -->
+          <div class="contact">
+            <p>
+              <a href="http://github.com/dristic/">github.com/dristic</a><br />
+              <a href="http://twitter.com/dristic101/">twitter.com/dristic101</a><br />
+            </p>
+          </div>
+        </div>
+      </div> <!-- /container -->
 
     </body>
 </html>

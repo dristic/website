@@ -1,0 +1,195 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: $gray-color;
+  font: 13.34px 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+.container {
+	display: block;
+	width: 600px;
+	margin: auto;
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+ul.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+ul.posts li {
+  line-height: 1.75em;
+}
+
+ul.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+.header {
+	background: $main-color;
+
+	.container {
+		text-align: left;
+	}
+}
+
+.header a {
+	@include transition(0.3s color);
+	font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.header h1.title {
+  display: inline-block;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.header h1.title a {
+  color: $white;
+}
+
+.header h1.title a:hover {
+  color: $highlight-color;
+}
+
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.header a.extra:hover {
+  color: #000;
+}
+
+.site-container {
+	@include border-radius(7px);
+	@include box-shadow(rgba(0, 0, 0, 0.2) 0px 1px 2px 0px);
+	@include box-sizing(border-box);
+	background: white;
+	margin-top: 3em;
+}
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 600px;
+  padding: 32px;
+  margin: 0 auto 2em;
+  line-height: 1.5em;
+}
+
+.site .meta {
+  color: #aaa;
+}
+
+.footer {
+	@include border-radius(0px 0px 7px 7px);
+	@include box-sizing(border-box);
+	background: lighten($gray-color, 2%);
+	padding-left: 2em;
+	padding-right: 2em;
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+  text-align: left;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer .contact a {
+  color: #8085C1;
+}
+
+.footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.footer .rss img {
+  border: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
