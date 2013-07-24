@@ -12,28 +12,35 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html, body { min-height: 100%; }
 
 body {
   background-color: $gray-color;
   font: 13.34px 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: small;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%;
+  font-weight: bold;
+}
 
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a         { color: $orange-color; }
+a:hover   { color: lighten($orange-color, 10%); }
+a:visited { color: darken($orange-color, 10%); }
 
 table {
   font-size: inherit;
   font: 100%;
+}
+
+ol {
+	list-style: decimal;
 }
 
 .container {
@@ -67,6 +74,17 @@ ul.posts span {
 
 	.container {
 		text-align: left;
+	}
+
+	#self {
+		@include box-shadow(darken($dark-gray-color, 20%) 0px 1px 0px 1px);
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		border-radius: 7px;
+		margin-top: -15px;
+		margin-right: 15px;
+		vertical-align: middle;
 	}
 }
 
@@ -106,15 +124,15 @@ ul.posts span {
 	@include box-shadow(rgba(0, 0, 0, 0.2) 0px 1px 2px 0px);
 	@include box-sizing(border-box);
 	background: white;
+	display: block;
 	margin-top: 3em;
 }
 
 .site {
   font-size: 115%;
   text-align: justify;
-  width: 600px;
   padding: 32px;
-  margin: 0 auto 2em;
+  margin: 0 auto 0;
   line-height: 1.5em;
 }
 
@@ -131,7 +149,6 @@ ul.posts span {
   font-size: 80%;
   color: #666;
   border-top: 4px solid #eee;
-  margin-top: 2em;
   overflow: hidden;
   text-align: left;
 
@@ -142,6 +159,7 @@ ul.posts span {
 
   .social {
   	@include border-radius(20px);
+  	@include transition(0.3s background);
   	background: $dark-gray-color;
   	display: inline-block;
   	width: 36px;
@@ -223,3 +241,10 @@ ul.posts span {
   background-color: #333;
 }
 
+#about-me-img {
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin-left: 15px;
+	margin-top: 15px;
+}

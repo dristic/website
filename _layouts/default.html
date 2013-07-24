@@ -22,8 +22,8 @@
     <body>
       <div class="header">
         <div class="container">
+          <img src="{{ site.url }}/images/self.jpg" id="self" alt="Dan Ristic" />
           <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          <!-- <a class="extra" href="/">Home</a> -->
         </div>
       </div>
 
@@ -41,19 +41,22 @@
           </div>
           <div class="contact-social">
             <p>
-              <a href="http://github.com/dristic/" class="social"><i class="icon-github">
+              <a href="http://github.com/dristic/" class="social" target="_blank"><i class="icon-github">
                 <span>GitHub dristic</span></i>
               </a>
-              <a href="http://twitter.com/dristic101/" class="social"><i class="icon-twitter">
+              <a href="http://twitter.com/dristic101/" class="social" target="_blank"><i class="icon-twitter">
                 <span>Twitter @dristic101</span></i>
               </a>
-              <a href="http://www.linkedin.com/pub/daniel-ristic/12/9a2/421" class="social">
+              <a href="http://www.linkedin.com/pub/daniel-ristic/12/9a2/421" class="social" target="_blank">
                 <i class="icon-linkedin"><span>LinkedIn daniel-ristic</span></i>
+              </a>
+              <a href="{{ site.url }}/feed.xml" class="social" target="_blank">
+                <i class="icon-rss"><span>RSS Dan Ristic</span></i>
               </a>
             </p>
           </div>
         </div>
-      </div> <!-- /container -->
+      </div>
 
     </body>
 </html>
