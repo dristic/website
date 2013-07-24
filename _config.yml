@@ -1,4 +1,5 @@
 name: Dan Ristic
 description: The blog for Dan Ristic
 url: http://danristic.com
+baseurl: /website
 pygments: true
