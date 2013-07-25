@@ -506,6 +506,12 @@ ul.posts li .content:hover {
 }
 
 /* line 350, ../sass/screen.scss */
+#about.content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* line 355, ../sass/screen.scss */
 #about-me-img {
   width: 200px;
   height: 200px;
