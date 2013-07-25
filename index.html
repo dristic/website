@@ -4,15 +4,26 @@ title: 'Dan Ristic - Developer Evangelist and Front End Engineer'
 ---
 
 <div id="home">
-	<blockquote>Your guide to the bleeding edge of the web and beyond&hellip;</blockquote>
-  <!-- <h1>Recent Posts</h1> -->
+  <div class="content quote">
+	 <blockquote>Your guide to the bleeding edge of the web and beyond&hellip;</blockquote>
+  </div>
   <ul class="posts">
     {% for post in site.posts %}
       <li>
-      	<span class="title"><span class="date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-      	
+        {% if post.thumbnail %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <img src="{{ site.baseurl }}{{ post.thumbnail }}" alt="{{ post.title }}" width="600" height="250" />
+          </a>
+        {% endif %}
+
+        <div class="content">
+        	<span class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+
+          <span class="date">{{ post.date | date_to_string }}</span>
+        	
       		{{ post.excerpt }}
       		<a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+        </div>
       </li>
     {% endfor %}
   </ul>

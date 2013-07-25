@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,18 +63,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 10, ../sass/screen.scss */
+/* line 6, ../sass/screen.scss */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 html, body {
   min-height: 100%;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 body {
   background-color: #ebeae9;
   font: 13.34px 'Open Sans', Helvetica, Arial, sans-serif;
@@ -87,49 +83,54 @@ body {
   padding-bottom: 40px;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: bold;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 h1 {
   margin-bottom: 1em;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 p {
   margin: 1em 0;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 a {
   color: #ee9853;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 a:hover {
   color: #f3b481;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 a:visited {
   color: #e97c25;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 table {
   font-size: inherit;
   font: 100%;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
+ul {
+  list-style: square;
+}
+
+/* line 47, ../sass/screen.scss */
 blockquote {
   color: #ee9853;
   font-weight: bold;
@@ -142,74 +143,81 @@ blockquote {
   border-left: 5px solid #ebeae9;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 65, ../sass/screen.scss */
 .title {
   font-size: 120%;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .container {
   display: block;
   width: 600px;
   margin: auto;
 }
 
-/*****************************************************************************/
-/*
-/* Home
-/*
-/*****************************************************************************/
-/* line 73, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 ul.posts {
   list-style-type: none;
   margin-bottom: 2em;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 ul.posts li {
   line-height: 1.75em;
   border-bottom: 1px solid #ebeae9;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-/* line 84, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
+ul.posts li:last-of-type {
+  border-bottom: none;
+}
+/* line 90, ../sass/screen.scss */
 ul.posts li span.title {
   font-size: 120%;
   font-weight: bold;
 }
-/* line 88, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 ul.posts li span.title a {
   color: black;
 }
-/* line 93, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 ul.posts li span.date {
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
   text-transform: uppercase;
 }
-/* line 100, ../sass/screen.scss */
-ul.posts li p {
+/* line 106, ../sass/screen.scss */
+ul.posts li .content {
   -webkit-transition: 0.3s color;
   -moz-transition: 0.3s color;
   -o-transition: 0.3s color;
   transition: 0.3s color;
   color: #888888;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-/* line 104, ../sass/screen.scss */
-ul.posts li p:hover {
+/* line 112, ../sass/screen.scss */
+ul.posts li .content:hover {
   color: #6f6f6f;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .header {
   background: #2a3945;
 }
-/* line 113, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .header .container {
   text-align: left;
 }
-/* line 117, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .header #self {
   -webkit-box-shadow: #555555 0px 1px 0px 1px;
   -moz-box-shadow: #555555 0px 1px 0px 1px;
@@ -223,7 +231,7 @@ ul.posts li p:hover {
   vertical-align: middle;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .header a {
   -webkit-transition: 0.3s color;
   -moz-transition: 0.3s color;
@@ -235,40 +243,40 @@ ul.posts li p:hover {
   text-transform: capitalize;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .header h1.title {
   display: inline-block;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .header h1.title a {
   color: white;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .header h1.title a:hover {
   color: #7fadd1;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .header a.extra {
   color: #aaa;
   margin-left: 1em;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .header a.extra:hover {
   color: #000;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .header .nav {
   float: right;
   margin-top: 25px;
 }
-/* line 164, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .header .nav a {
   -webkit-transition: 0.3s color;
   -moz-transition: 0.3s color;
@@ -278,12 +286,12 @@ ul.posts li p:hover {
   font-size: 16px;
   margin-left: 16px;
 }
-/* line 170, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .header .nav a:hover {
   color: #dfdddc;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .site-container {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -301,21 +309,25 @@ ul.posts li p:hover {
   margin-top: 3em;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .site {
   font-size: 115%;
   text-align: justify;
-  padding: 32px;
   margin: 0 auto 0;
   line-height: 1.5em;
 }
+/* line 201, ../sass/screen.scss */
+.site .content {
+  padding-left: 32px;
+  padding-right: 32px;
+}
 
-/* line 193, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .site .meta {
   color: #aaa;
 }
 
-/* line 197, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .footer {
   -webkit-border-radius: 0px 0px 7px 7px;
   -moz-border-radius: 0px 0px 7px 7px;
@@ -334,12 +346,12 @@ ul.posts li p:hover {
   overflow: hidden;
   text-align: left;
 }
-/* line 209, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .footer .contact-social {
   display: block;
   min-width: 300px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .footer .social {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -360,61 +372,70 @@ ul.posts li p:hover {
   text-decoration: none;
   margin-right: 5px;
 }
-/* line 227, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .footer .social:hover {
   background: #a2a2a2;
 }
-/* line 231, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .footer .social i {
   color: white;
 }
-/* line 235, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .footer .social i > span {
   display: none;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .footer .contact {
   float: left;
   margin-right: 3em;
 }
 
-/* line 246, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .footer .contact a {
   color: #8085C1;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .footer .rss {
   margin-top: 1.1em;
   margin-right: -.2em;
   float: right;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .footer .rss img {
   border: 0;
 }
 
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
-/* standard */
-/* line 267, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
+.post-thumbnail {
+  -webkit-border-radius: 7px 7px 0px 0px;
+  -moz-border-radius: 7px 7px 0px 0px;
+  -ms-border-radius: 7px 7px 0px 0px;
+  -o-border-radius: 7px 7px 0px 0px;
+  border-radius: 7px 7px 0px 0px;
+}
+
+/* line 280, ../sass/screen.scss */
+.post.content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* line 285, ../sass/screen.scss */
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em;
 }
 
-/* line 273, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .post ul, .post ol {
   margin-left: 1.35em;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .post code {
   font-family: monospace;
   border: 1px solid #ddd;
@@ -422,30 +443,56 @@ ul.posts li p:hover {
   padding: 0 .2em;
 }
 
-/* line 284, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .post pre code {
   border: none;
 }
 
 /* terminal */
-/* line 289, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
 }
 
-/* line 295, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 .post pre.terminal code {
   background-color: #333;
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .post-tweet {
   font-style: italic;
 }
+/* line 320, ../sass/screen.scss */
+.post-tweet .twitter-mention-button {
+  vertical-align: text-bottom;
+}
 
-/* line 303, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
+.recent-posts {
+  list-style: none;
+}
+
+/* line 330, ../sass/screen.scss */
+#home .quote {
+  -webkit-transform-origin: 50% 100% 50%;
+  -moz-transform-origin: 50% 100% 50%;
+  -ms-transform-origin: 50% 100% 50%;
+  -o-transform-origin: 50% 100% 50%;
+  transform-origin: 50% 100% 50%;
+  -webkit-transform: perspective(300px) rotateX(25deg);
+  -moz-transform: perspective(300px) rotateX(25deg);
+  -ms-transform: perspective(300px) rotateX(25deg);
+  -o-transform: perspective(300px) rotateX(25deg);
+  transform: perspective(300px) rotateX(25deg);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
+/* line 338, ../sass/screen.scss */
 #home blockquote {
   color: #ee9853;
   font-weight: bold;
@@ -453,12 +500,12 @@ ul.posts li p:hover {
   line-height: 28px;
   padding-left: 20px;
   padding-right: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   position: relative;
   border-left: 5px solid #ebeae9;
 }
 
-/* line 315, ../sass/screen.scss */
+/* line 350, ../sass/screen.scss */
 #about-me-img {
   width: 200px;
   height: 200px;

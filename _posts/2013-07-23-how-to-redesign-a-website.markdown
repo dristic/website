@@ -3,9 +3,11 @@ layout: post
 title:  "How to Redesign a Website in a Week With Jekyll"
 date:   2013-07-23 08:44:06
 categories: update
+thumbnail: /assets/thumbnail/2013-07-23-how-to-redesign-a-website.png
 ---
 
-"I have finally found some free time in my busy day to build a brand new website", said every developer ever. Well I am glad I got my required first sentence for this blog out of the way. Now onto bigger and better things!
+> I have finally found some free time in my busy day to build a brand new website 
+Well I am glad I got my required first sentence for this blog out of the way. Now onto bigger and better things!
 
 I wanted to start this blog and personal website off right. One of the first things I did was come up with a list of reasons on why I should start building a brand new site:
 
@@ -32,7 +34,7 @@ The biggest reasons for choosing jekyll was for ease of use and speed. With Word
 
 My experience with jekyll was great. I never once hit a dead end or a wall and how easy it was to use made me more and more excited to get it finished. It is even able to be hosted on GitHub pages so if you are a GitHub user this makes life easy. If you plan on creating a personal blog or website I would recommend checking it out.
 
-# Where to go next
+# Where to Go Next
 * [jekyll](http://jekyllrb.com)
-* [jekyll XML feed](http://github.com/xml-feed)
+* [jekyll XML feed](https://github.com/snaptortoise/jekyll-rss-feeds)
 * [compass](http://compass-style.org)

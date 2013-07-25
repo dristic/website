@@ -1,22 +1,27 @@
 ---
 layout: default
 ---
-<h1 class="title">{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<img src="{{ site.baseurl }}{{ page.thumbnail }}" alt="{{ page.title }}" width="600" height="250" class="post-thumbnail" />
 
-<div class="post">
-{{ content }}
+<div class="post content">
+  <h1 class="title">{{ page.title }}</h1>
+  <p class="meta">{{ page.date | date_to_string }}</p>
+
+  <div class="post">
+  {{ content }}
+  </div>
+
+  <p class="post-tweet">
+    Questions, comments, answers to the meaning of life?</i> &raquo; <a href="https://twitter.com/intent/tweet?screen_name=dristic101" class="twitter-mention-button" data-lang="en">Tweet to @dristic101</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </p>
+
+  <h1>More Words I Typed</h1>
+  <ul class="recent-posts">
+    {% for post in site.posts %}
+      <li>
+        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
-
-<p class="post-tweet">
-  Questions, comments, answers to the meaning of life?</i> &raquo; <a href="http://twitter.com/dristic101/" target="_blank"><i class="icon-twitter"><span>Twitter @dristic101</span></a>
-</p>
-
-<h1>Recent Posts</h1>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-    </li>
-  {% endfor %}
-</ul>
