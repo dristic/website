@@ -43,6 +43,18 @@ ol {
 	list-style: decimal;
 }
 
+blockquote {
+  color: $orange-color;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 28px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  border-left: 5px solid $gray-color;
+}
+
 .container {
 	display: block;
 	width: 600px;
@@ -61,12 +73,28 @@ ul.posts {
 
 ul.posts li {
   line-height: 1.75em;
-}
+  border-bottom: 1px solid $gray-color;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 
-ul.posts span {
-  color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+  span.title {
+    font-size: 120%;
+  }
+
+  span.date {
+    color: #aaa;
+    font-family: Monaco, "Courier New", monospace;
+    font-size: 80%;
+  }
+
+  p {
+    @include transition(0.3s color);
+    color: $dark-gray-color;
+
+    &:hover {
+      color: darken($dark-gray-color, 10%);
+    }
+  }
 }
 
 .header {
@@ -117,6 +145,22 @@ ul.posts span {
 
 .header a.extra:hover {
   color: #000;
+}
+
+.header .nav {
+  float: right;
+  margin-top: 25px;
+
+  a {
+    @include transition(0.3s color);
+    color: lighten($gray-color, 5%);
+    font-size: 16px;
+    margin-left: 16px;
+
+    &:hover {
+      color: darken($gray-color, 5%);
+    }
+  }
 }
 
 .site-container {
@@ -221,6 +265,7 @@ ul.posts span {
 }
 
 .post code {
+  font-family: monospace;
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .2em;
@@ -239,6 +284,18 @@ ul.posts span {
 
 .post pre.terminal code {
   background-color: #333;
+}
+
+#home blockquote {
+  color: $orange-color;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 28px;
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+  position: relative;
+  border-left: 5px solid $gray-color;
 }
 
 #about-me-img {
