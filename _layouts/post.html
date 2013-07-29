@@ -19,9 +19,11 @@ layout: default
   <h1>More Words I Typed</h1>
   <ul class="recent-posts">
     {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-      </li>
+      {% if post.title != page.title %}
+        <li>
+          <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

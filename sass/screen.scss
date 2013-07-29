@@ -62,6 +62,10 @@ img {
 }
 
 // Home page
+.vcard {
+  display: inline;
+}
+
 .title {
   font-size: 120%;
 }
@@ -281,6 +285,14 @@ ul.posts li {
 .post.content {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.post {
+  img {
+    display: block;
+    float: right;
+    margin-left: 15px;
+  }
 }
 
 .post pre {
