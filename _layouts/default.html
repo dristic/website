@@ -26,7 +26,7 @@
         <div class="container">
           <div class="vcard">
             <img src="{{ site.baseurl }}/images/self.jpg" id="self" alt="Dan Ristic" class="photo" />
-            <h1 class="title"><a href="{{ site.baseurl }}" class="url fn">Dan Ristic</a></h1>
+            <h1 class="title"><a href="{{ site.url }}" class="url fn">Dan Ristic</a></h1>
           </div>
           <div class="nav">
             <a href="{{ site.baseurl }}/">Home</a>
@@ -49,16 +49,16 @@
           </div>
           <div class="contact-social">
             <p>
-              <a href="http://github.com/dristic/" class="social" target="_blank"><i class="icon-github" onClick="_gaq.push(['_trackEvent', 'Social', 'Click', 'GitHub']);">
+              <a href="http://github.com/dristic/" class="social" target="_blank"><i class="icon-github" data-track="Social/Click/GitHub">
                 <span>GitHub dristic</span></i>
               </a>
-              <a href="http://twitter.com/dristic101/" class="social" target="_blank"><i class="icon-twitter" onClick="_gaq.push(['_trackEvent', 'Social', 'Click', 'Twitter']);">
+              <a href="http://twitter.com/dristic101/" class="social" target="_blank"><i class="icon-twitter" data-track="Social/Click/Twitter">
                 <span>Twitter @dristic101</span></i>
               </a>
-              <a href="http://www.linkedin.com/pub/daniel-ristic/12/9a2/421" class="social" target="_blank" onClick="_gaq.push(['_trackEvent', 'Social', 'Click', 'LinkedIn']);">
+              <a href="http://www.linkedin.com/pub/daniel-ristic/12/9a2/421" class="social" target="_blank" data-track="Social/Click/LinkedIn">
                 <i class="icon-linkedin"><span>LinkedIn daniel-ristic</span></i>
               </a>
-              <a href="{{ site.baseurl }}/feed.xml" class="social" target="_blank" onClick="_gaq.push(['_trackEvent', 'Social', 'Click', 'Feed']);">
+              <a href="{{ site.baseurl }}/feed.xml" class="social" target="_blank" data-track="Social/Click/Feed">
                 <i class="icon-rss"><span>RSS Dan Ristic</span></i>
               </a>
             </p>
@@ -75,6 +75,7 @@
   ga('create', 'UA-42942732-1', 'danristic.com');
   ga('send', 'pageview');
 </script>
+<script type="text/javascript" src="scripts/main.min.js"></script>
 
     </body>
 </html>
