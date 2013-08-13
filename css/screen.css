@@ -439,15 +439,16 @@ ul.posts li .content:hover {
 .post pre {
   border: 1px solid #ddd;
   background-color: #eef;
-  padding: 0 .4em;
+  padding: .4em .4em;
+  line-height: 100%;
 }
 
-/* line 305, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .post ul, .post ol {
   margin-left: 1.35em;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .post code {
   font-family: monospace;
   border: 1px solid #ddd;
@@ -455,39 +456,39 @@ ul.posts li .content:hover {
   padding: 0 .2em;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .post pre code {
   border: none;
 }
 
 /* terminal */
-/* line 321, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .post pre.terminal {
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .post pre.terminal code {
   background-color: #333;
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .post-tweet {
   font-style: italic;
 }
-/* line 334, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .post-tweet .twitter-mention-button {
   vertical-align: text-bottom;
 }
 
-/* line 339, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 .recent-posts {
   list-style: none;
 }
 
-/* line 344, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #home .quote {
   -webkit-transform-origin: 50% 100% 50%;
   -moz-transform-origin: 50% 100% 50%;
@@ -504,7 +505,7 @@ ul.posts li .content:hover {
   display: block;
 }
 
-/* line 352, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 #home blockquote {
   color: #ee9853;
   font-weight: bold;
@@ -517,13 +518,13 @@ ul.posts li .content:hover {
   border-left: 5px solid #ebeae9;
 }
 
-/* line 364, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 #about.content {
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-/* line 369, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 #about-me-img {
   width: 200px;
   height: 200px;
