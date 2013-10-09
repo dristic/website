@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I Generate All My Apps With Yeoman"
 date:   2013-10-08 10:38:00
-categories: html5 javascript ecmascript
+categories: javascript tooling
 thumbnail: /assets/thumbnail/yeoman.png
 ---
 

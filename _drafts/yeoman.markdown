@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I Generate All My Apps With Yeoman"
 date:   2013-08-13 10:38:00
-categories: html5 javascript ecmascript
+categories: javascript tooling
 thumbnail: /assets/thumbnail/webrtc.png
 ---
 I wanted to do a short post to get back into the swing of things and I thought Yeoman would be a great short and sweet topic. As a developer evangelist I probably start between one to two projects a week. My work is constantly involved in the prototyping and creation of new ideas so one can say I have some experience in the first ten steps of a web project. A typical non-generated projected goes something like this:
