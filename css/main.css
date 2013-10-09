@@ -143,6 +143,10 @@ ul.posts span {
   margin-left: 1.35em;
 }
 
+.post ol {
+  margin-left: 3.335em;
+}
+
 .post code {
   border: 1px solid #ddd;
   background-color: #eef;
