@@ -1,0 +1,13 @@
+baseURL = 'https://danristic.com/'
+languageCode = 'en-us'
+title = 'Dan Ristic'
+theme = "hugo-bearcub"
+copyright = "Dan Ristic"
+
+[params]
+  description = "My Personal Blog"
+
+  madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+
+  [params.author]
+    name = "Dan Ristic"
