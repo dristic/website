@@ -3,3 +3,4 @@ description: The blog for Dan Ristic
 url: http://danristic.com
 baseurl: ''
 pygments: true
+markdown: kramdown
